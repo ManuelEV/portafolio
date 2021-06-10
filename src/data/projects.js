@@ -1,6 +1,31 @@
 
 const projects = [
     {
+        id: 7,
+        name: 'Reactibook',
+        description: 'Aplicación web que simula el muro de facebook, la cual está construida con React + Redux + TailwindCSS en el frontend y Node + Express + Mongoose + MongoDB (Atlas) en el backend. La autenticación se maneja mediante Firebase y la gestión de las imágenes con Cloudinary',
+        previews: [
+            {
+                id: 1,
+                src: './projects/reactibook-1.png'
+            },
+            {
+                id: 2,
+                src: './projects/reactibook-2.gif'
+            },
+            {
+                id: 3,
+                src: './projects/reactibook-3.gif'
+            },
+        ],
+        technologies: [
+            'React',
+            'Node.js',
+        ],
+        code: 'https://github.com/ManuelEV/reactibook',
+        demo: 'https://reactibook-backend-node.herokuapp.com',
+    },
+    {
         id: 1,
         name: 'Mapu Rayén',
         description: 'Aplicación web creada para un emprendimiento de artículos de artesanía, que permite gestionar los productos y la venta de estos. La aplicación web está hecha en Vue.js y Laravel',
@@ -10,7 +35,7 @@ const projects = [
                 src: './projects/mapu-rayen-preview1.gif'
             },
             {
-                id: 1,
+                id: 2,
                 src: './projects/mapu-rayen-preview2.gif'
             },
         ],

@@ -33,7 +33,7 @@ export const Projects = () => {
             <div className="flex flex-row justify-center pb-2">
                 {
                     techs.map(({id, name, src}) => (
-                        <div className="h-16 w-16 mx-10" key={id}>
+                        <div className="h-16 w-16 mx-10" key={id+src}>
                             <img alt={name} src={src} className="cursor-pointer" onClick={onSelectTech}/>
                         </div>
                     ))
@@ -42,9 +42,9 @@ export const Projects = () => {
             <div className="flex justify-center">
                 <div className="grid grid-cols-1 mt-4 mx-2 w-5/6">
                     {
-                        projects.map(({id, name, description, previews, code}) => (
+                        projects.map(({id, name, description, previews, code, demo}) => (
                             <div className="bg-white bg-opacity-20 rounded-lg shadow-lg m-2 p-1
-                            animate__animated animate__fadeIn" key={id}>
+                            animate__animated animate__fadeIn" key={id+name}>
                                 <div className="text-center font-bold text-xl text-white opacity-80">
                                     {name}
                                 </div>
@@ -63,11 +63,21 @@ export const Projects = () => {
                                 }
                                 </div>
                                 <div className="flex justify-center">
-                                    <div className="my-2">
+                                    <div className="my-2 mx-2">
                                         <a href={code} target="_blank" rel="noopener noreferrer">
                                             <img alt="" src="./technologies/github.svg" className="h-10 w-10"/>
                                         </a>
                                     </div>
+                                    {
+                                        (demo) &&
+                                        (
+                                            <div className="my-2 mx-2">
+                                                <a href={demo} target="_blank" rel="noopener noreferrer">
+                                                    <img alt="" src="./demo.svg" className="h-10 w-10"/>
+                                                </a>
+                                            </div>
+                                        )
+                                    }
                                 </div>
                             </div>
                         ))
