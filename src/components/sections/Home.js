@@ -32,7 +32,7 @@ export const Home = () => {
                     Desarrollador web Fullstack
                 </div>
                 <img src="./setup/room.png" alt="Room" 
-                className="h-full absolute animate__animated animate__fadeInUp z-30"/>
+                className="h-full select-none absolute animate__animated animate__fadeInUp z-30"/>
             </div>
         </div>
     )
