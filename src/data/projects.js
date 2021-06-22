@@ -26,6 +26,26 @@ const projects = [
         demo: 'https://reactibook-backend-node.herokuapp.com',
     },
     {
+        id: 8,
+        name: 'Schedule App',
+        description: 'Aplicación web para gestionar agendas de contactos, construida con Spring Boot, Vue.js y MySQL',
+        previews: [
+            {
+                id: 1,
+                src: './projects/schedule-app-1.png'
+            },
+            {
+                id: 2,
+                src: './projects/schedule-app-2.gif'
+            },
+        ],
+        technologies: [
+            'Spring Boot',
+            'Vue.js',
+        ],
+        code: 'https://github.com/ManuelEV/schedule-app',
+    },
+    {
         id: 1,
         name: 'Mapu Rayén',
         description: 'Aplicación web creada para un emprendimiento de artículos de artesanía, que permite gestionar los productos y la venta de estos. La aplicación web está hecha en Vue.js y Laravel',
