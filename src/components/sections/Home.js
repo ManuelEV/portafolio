@@ -12,12 +12,12 @@ export const Home = () => {
             animate__animated animate__fadeInDown">
                 {
                     images.map(({id, name, src}) => (
-                        <img key={id} alt={name} src={src} className="h-16 w-14 mx-5"/>
+                        <img key={id} alt={name} src={src} className="h-16 w-14 lg:mx-5 mx-1"/>
                     ))
                 }
             </div>
             <div className="w-full h-1/5 flex justify-center items-center">
-                <div className="text-center font-bold text-7xl text-primary tracking-widest
+                <div className="text-center font-bold lg:text-7xl text-6xl text-primary tracking-widest
                 bg-white bg-opacity-30 p-2 animate__animated animate__fadeInDown">
                     MANUEL ESPINOZA
                 </div>
@@ -32,7 +32,8 @@ export const Home = () => {
                     Desarrollador web Fullstack
                 </div>
                 <img src="./setup/room.png" alt="Room" 
-                className="h-full select-none absolute animate__animated animate__fadeInUp z-30"/>
+                className="h-full select-none absolute animate__animated animate__fadeInUp z-30
+                "/>
             </div>
         </div>
     )
