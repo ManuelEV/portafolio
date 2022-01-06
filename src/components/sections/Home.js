@@ -8,7 +8,7 @@ export const Home = () => {
     return (
         <div className="bg-gradient-to-tr from-primary to-secondary
         w-full h-screen">
-            <div className="w-full h-1/5 flex justify-center items-end
+            <div className="w-full h-1/5 flex justify-center items-end z-30
             animate__animated animate__fadeInDown">
                 {
                     images.map(({id, name, src}) => (
@@ -16,6 +16,7 @@ export const Home = () => {
                     ))
                 }
             </div>
+            
             <div className="w-full h-1/5 flex justify-center items-center">
                 <div className="text-center font-bold lg:text-7xl text-6xl text-primary tracking-widest
                 bg-white bg-opacity-30 p-2 animate__animated animate__fadeInDown">
@@ -32,9 +33,10 @@ export const Home = () => {
                     Desarrollador web Fullstack
                 </div>
                 <img src="./setup/room.png" alt="Room" 
-                className="h-full select-none absolute animate__animated animate__fadeInUp z-30
+                className="h-full select-none z-30
                 "/>
             </div>
+            
         </div>
     )
 }
