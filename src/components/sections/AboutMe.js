@@ -32,7 +32,7 @@ export const AboutMe = () => {
             </div>
             <div className="timeline">
                 {
-                experiencies.map(({id, title, workplace, description, technologies, dateRange}) => (
+                experiencies.map(({id, title, workplace, description, technologies, dateRange, workplaceIcon}) => (
                     <div 
                         className={`container ${id % 2 === 0 ? 'right animate__fadeInRight' : 'left animate__fadeInLeft'} 
                         animate__animated`} key={ id }
@@ -46,9 +46,12 @@ export const AboutMe = () => {
                             <p className="pt-5 text-primary opacity-90 text-lg">
                                 { description }
                             </p>
-                            
 
-                            <div className="w-full text-center pt-2 text-primary underline cursor-pointer">
+                            <div className="w-full flex justify-center">
+                                <img className="h-16" src={ workplaceIcon } alt="Workplace"></img>
+                            </div>
+                            
+                            <div className="w-full text-center text-primary underline cursor-pointer">
                                 
                                 <Popup
                                     trigger={<button className="underline hover:text-secondary">Tecnologías utilizadas 🛠</button>} 
