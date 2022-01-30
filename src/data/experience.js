@@ -7,7 +7,7 @@ const experience = [
         location: 'Santiago, Chile (remoto)',
         workplaceUrl: 'https://',
         workplaceIcon: './companies/forus.png',
-        description: 'Desarrollo de múltiples aplicaciones (frontend, backend y mobne ile) en ambiente cloud en el ámbito de retail',
+        description: 'Diseño, desarrollo y mantención de múltiples aplicaciones (Mobile, Frontend y Backend)',
         technologies: ['Spring Framework','React.js','React Native','AWS'],
         dateRange: 'Enero 2022 - Actualmente',
     },
